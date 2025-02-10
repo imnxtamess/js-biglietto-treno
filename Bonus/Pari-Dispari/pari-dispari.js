@@ -19,9 +19,14 @@
 
 const user_choice = prompt("Scegli pari o dispari, esempio [pari,dispari]");
 console.log(user_choice);
-
+if (user_choice != ("pari") && ("dispari")) {
+  alert("Devi scrivere 'pari' o 'dispari', ritenta.")
+}
 const user_number = Number(prompt("Inserire un valore numerico compreso tra 1 e 9, esempio [1, 2, 3, ecc..]"));
 console.log(user_number);
+if (user_choice > 9) {
+  alert("Devi scrivere un numero compreso tra '1' e '9', ritenta.")
+}
 
 // Generare un numero casuale compreso tra 1 e 9, che sarà la giocata del computer. 
 
@@ -35,6 +40,11 @@ const sum = user_number + pc_number
 console.log(sum);
 
 
+
+// Verificare che il prompt sia corretto
+
+
+
 // Verificare se il numero è pari e se l'utente ha scelto pari dichiarare il vincitore, altrimenti ha vinto il PC
 
 const even = (sum % 2) == 0
@@ -45,16 +55,16 @@ console.log(uneven);
 
 
 if (user_choice === ("pari") && even == true) {
-  console.log(`Hai vinto la somma è pari (${sum})`);
+  alert(`Hai vinto la somma è pari (${sum})`);
 }
 else if (user_choice === ("pari") && uneven == true) {
-  console.log(`Hai perso la somma è dispari (${sum})`);
+  alert(`Hai perso la somma è dispari (${sum})`);
 }
 
 if (user_choice === ("dispari") && even == true) {
-  console.log(`Hai perso la somma è pari (${sum})`);
+  alert(`Hai perso la somma è pari (${sum})`);
 }
 else if (user_choice === ("dispari") && uneven == true) {
-  console.log(`Hai vinto la somma è dispari (${sum})`);
+  alert(`Hai vinto la somma è dispari (${sum})`);
 }
 
