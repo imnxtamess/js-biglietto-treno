@@ -61,7 +61,7 @@ else if (user_choice === ("pari") && uneven == true) {
   alert(`Hai perso la somma è dispari (${sum})`);
 }
 
-if (user_choice === ("dispari") && even == true) {
+else if (user_choice === ("dispari") && even == true) {
   alert(`Hai perso la somma è pari (${sum})`);
 }
 else if (user_choice === ("dispari") && uneven == true) {
