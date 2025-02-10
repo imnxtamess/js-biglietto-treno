@@ -16,6 +16,22 @@ console.log(user_distance);
 const user_age = Number(prompt("Quanti anni hai? "));
 console.log(user_age);
 
+
+// Define price variables:
+
 // Define base price
 const base_price = user_distance * 0.21
-console.log(base_price);
+console.log(base_price.toFixed(2));
+
+// Define price if minor
+const minor_discount = (base_price / 100) * 20
+console.log(minor_discount.toFixed(2));
+
+const minor_price = base_price - minor_discount
+console.log(minor_price.toFixed(2));
+
+// Define price if over 65
+
+
+
+
