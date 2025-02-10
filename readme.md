@@ -21,4 +21,4 @@ to-do list:
 - <span style="color: orange">ELSE IF</span> over 65 get a 40% discount
 - final price has to have 2 decimal numbers max
 
-3. print final price variable
+3. print final price calculation

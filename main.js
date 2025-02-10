@@ -21,7 +21,7 @@ console.log(user_age);
 
 // Define base price
 const base_price = user_distance * 0.21
-console.log(base_price.toFixed(2));
+console.log(base_price);
 
 // Define price if minor
 const minor_discount = (base_price / 100) * 20
@@ -36,6 +36,19 @@ console.log(over65_discount.toFixed(2));
 
 const over65_price = base_price - over65_discount
 console.log(over65_price.toFixed(2));
+
+// Final price calculation
+
+if (user_age <= 17) {
+  alert(`Il prezzo del tuo biglietto è ${minor_price.toFixed(2)}€`)
+}
+else if (user_age >= 65) {
+  alert(`Il prezzo del tuo biglietto è ${over65_price.toFixed(2)}€`)
+}
+else {
+  alert(`Il prezzo del tuo biglietto è ${base_price}€`)
+}
+
 
 
 
