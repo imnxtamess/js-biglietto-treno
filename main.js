@@ -31,6 +31,11 @@ const minor_price = base_price - minor_discount
 console.log(minor_price.toFixed(2));
 
 // Define price if over 65
+const over65_discount = (base_price / 100) * 40
+console.log(over65_discount.toFixed(2));
+
+const over65_price = base_price - over65_discount
+console.log(over65_price.toFixed(2));
 
 
 
